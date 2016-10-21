@@ -1,9 +1,15 @@
-<div>
-    <div class="index">{{pictureData.picIndex}}</div>
-    <div class="picture-holder">
-        <ul>
-            <li *ngFor="let picture of pictureData.picArray">
-                <img [src]="picture">
+<div class="bigpicture-holder" [style.height]="screenHeight">
+    <div class="bigpicture-nav">
+        <div>
+            {{pictureData.picIndex}}/{{pictureData.picArray.length}}
+        </div>
+    </div>
+    <div class="bigpicture-content">
+        <ul [style.width]="ulWidth">
+            <li [style.width]="screenWidth" *ngFor="let picture of pictureData.picArray">
+                <div class="img-holder">
+                    <img [src]="picture">
+                </div>
             </li>
         </ul>
     </div>
