@@ -5,7 +5,7 @@
         </div>
     </div>
     <div class="bigpicture-content">
-        <ul [style.width]="ulWidth">
+        <ul [style.width]="ulWidth" (swipeleft)="log($event)">
             <li [style.width]="screenWidth" *ngFor="let picture of pictureData.picArray">
                 <div class="img-holder">
                     <img [src]="picture">
