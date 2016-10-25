@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Picture } from './PictureData.service.ts';
+import { Picture } from './PictureData.service';
 // require('harmmerjs');
 @Component({
     selector: 'app-root',
