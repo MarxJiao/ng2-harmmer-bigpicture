@@ -1,3 +1,17 @@
-<p>
-  harmmer works!
-</p>
+<div class="bigpicture-holder" [style.height]="screenHeight">
+    <div class="bigpicture-nav">
+        <div>
+            {{pictureData.picIndex}}/{{pictureData.picArray.length}}
+        </div>
+    </div>
+    <div class="bigpicture-content">
+        <ul [style.width]="ulWidth" (swipeleft)="log($event)">
+            <li [style.width]="screenWidth" *ngFor="let picture of pictureData.picArray">
+                <div class="img-holder">
+                    <img [src]="picture">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer"></div>
+</div>
