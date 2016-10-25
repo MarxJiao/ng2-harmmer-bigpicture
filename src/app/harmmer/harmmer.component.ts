@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Picture } from '../service/picture-data.service'
 
 @Component({
   selector: 'app-harmmer',
