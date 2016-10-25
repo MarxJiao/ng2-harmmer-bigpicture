@@ -13,9 +13,9 @@
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
       "prefix": "app",
-      "mobile": false,
+      "mobile": true,
       "styles": [
-        "styles.css"
+        "styles.less"
       ],
       "scripts": [],
       "environments": {
